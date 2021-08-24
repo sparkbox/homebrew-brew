@@ -4,7 +4,7 @@ class Sb < Formula
   VERSION = "v0.5.0".freeze
   $name = ""
   desc "A CLI to generate SSH Certificates after verifying your identity via Slack."
-  homepage ""
+  homepage "https://github.com/sparkbox/sb"
   bottle :unneeded
 
   if OS.mac?
@@ -20,8 +20,7 @@ class Sb < Formula
   end
 
   def install
-    system "mv #{$name} sb"
-    bin.install "sb"
+    bin.install "#{$name}" => "sb"
   end
 
 end
