@@ -5,7 +5,6 @@ class Sb < Formula
   $name = ""
   desc "A CLI to generate SSH Certificates after verifying your identity via Slack."
   homepage "https://github.com/sparkbox/sb"
-  bottle :unneeded
 
   if OS.mac?
     if Hardware::CPU.arm?
